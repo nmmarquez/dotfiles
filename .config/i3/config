@@ -209,7 +209,7 @@ exec slack
 exec_always xset s 1800
 
 # custom commands
-bindsym $mod+shift+x exec ~/Documents/dotfiles/lock
+bindsym $mod+shift+x exec ~/.config/i3/lock
 bindsym $mod+m move workspace to output left
 bindsym Print exec gnome-screenshot
 bindsym Shift+Print exec gnome-screenshot -a
