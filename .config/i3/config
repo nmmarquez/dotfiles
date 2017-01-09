@@ -201,10 +201,6 @@ bindsym XF86Search exec playerctl previous
 
 # execute on startup
 exec spotify
-exec rstudio
-#exec chromium-browser
-exec atom
-#exec firefox
 exec slack
 exec_always xset s 1800
 
@@ -228,5 +224,5 @@ gaps outer 10
 smart_gaps on
 smart_borders on
 
-exec_always feh --bg-scale ~/Pictures/Wallpapers/cubes-black-blue-white-shiny-reflection-minimalism-simple-3d-2560x1600.jpg
+exec_always feh --bg-scale ~/.config/i3/wallpaper.jpg
 exec_always --no-startup-id ~/.config/i3/input_modifiers.sh
