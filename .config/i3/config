@@ -209,8 +209,7 @@ exec slack
 exec_always xset s 1800
 
 # custom commands
-#bindsym $mod+shift+x exec ~/.config/i3/lockscreen.sh
-bindsym $mod+shift+x exec ~/.i3/i3lock-fancy-multimonitor/lock
+bindsym $mod+shift+x exec ~/Documents/dotfiles/lock
 bindsym $mod+m move workspace to output left
 bindsym Print exec gnome-screenshot
 bindsym Shift+Print exec gnome-screenshot -a
