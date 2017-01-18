@@ -213,6 +213,7 @@ exec_always --no-startup-id  "setxkbmap -v us"
 exec_always xrandr --output VIRTUAL1 --off --output eDP1 --primary --mode 1600x900 --pos 0x540 --rotate normal --output DP2-1 --mode 2560x1440 --pos 1600x0 --rotate normal
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nm-applet
+exec --no-startup-id blueman-applet
 exec --no-startup-id syndaemon -i 0.5 -K -R -d
 exec compton -f
 

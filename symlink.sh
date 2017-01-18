@@ -11,9 +11,11 @@ rm ~/.config/i3/*
 ln -s $FOLDER/.config/i3/* ~/.config/i3/
 
 # copy misc files
-ln -s $FOLDER/images/wallpaper.png ~/.config/i3/
 ln -s $FOLDER/lock ~/.config/i3/
 
 # replace oh my zsh thme
 rm ~/.oh-my-zsh/themes/dracula.zsh-theme
 ln -s $FOLDER/themes/dracula.zsh-theme ~/.oh-my-zsh/themes/
+
+# wallpaper if its there
+ln -s $FOLDER/images/wallpaper.jpg ~/.config/i3/
