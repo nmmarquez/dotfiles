@@ -11,6 +11,7 @@ rm ~/.config/i3/*
 ln -s $FOLDER/.config/i3/* ~/.config/i3/
 
 # copy misc files
+ln -s $FOLDER/images/wallpaper.jpg ~/.config/i3/
 ln -s $FOLDER/lock ~/.config/i3/
 
 # replace oh my zsh thme
