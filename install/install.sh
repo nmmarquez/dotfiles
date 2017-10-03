@@ -7,6 +7,10 @@ sudo apt-get install git i3 r-base-dev xutils-dev libtool xcb xcb-proto \
     libjpeg62 zsh thunar rofi feh i3blocks gtk-doc-tools \
     gobject-introspection
 
+mkdir ~/.fonts
+wget "https://github.com/FortAwesome/Font-Awesome/blob/master/fonts/fontawesome-webfont.ttf?raw=true" \
+    -O ~/.fonts/fontawesome-webfont.ttf
+
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 chsh -s /usr/bin/zsh
@@ -17,6 +21,7 @@ sudo apt-get install libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev \
     libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev \
     autoconf
 
+# install xcb-util-xrm for i3-gaps
 cd /tmp
 git clone https://github.com/Airblader/xcb-util-xrm
 cd xcb-util-xrm
@@ -25,6 +30,7 @@ git submodule update --init
 make
 sudo make install
 
+# install i3 gaps
 cd /tmp
 # clone the repository
 git clone https://www.github.com/Airblader/i3 i3-gaps
@@ -41,6 +47,7 @@ mkdir -p build && cd build/
 make
 sudo make install
 
+# install player-ctl
 cd /tmp
 git clone https://github.com/acrisci/playerctl.git
 cd playerctl
