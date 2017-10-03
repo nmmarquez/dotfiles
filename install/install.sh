@@ -4,7 +4,8 @@
 # libraries to use the system the way a nyan can
 
 sudo apt-get install git i3 r-base-dev xutils-dev libtool xcb xcb-proto \
-    libjpeg62 zsh thunar rofi
+    libjpeg62 zsh thunar rofi feh i3blocks gtk-doc-tools \
+    gobject-introspection
 
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
@@ -41,14 +42,21 @@ make
 sudo make install
 
 cd /tmp
+git clone https://github.com/acrisci/playerctl.git
+cd playerctl
+./autogen.sh --prefix=/usr
+make
+sudo make install
+
+cd /tmp
 # install rstudio
 wget https://download1.rstudio.org/rstudio-xenial-1.0.153-amd64.deb
 sudo dpkg -i ./rstudio-*.deb
 
 # install anaconda
-wget mini_conda_link
-bash https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
-~/*conda*/bin/conda create -n datasci jupyter panadas numpy xarray matplotlib \
+wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash ./Miniconda3-latest-Linux-x86_64.sh
+~/*conda*/bin/conda create -n datasci jupyter pandas numpy xarray matplotlib \
   pymc3 scipy
 
 cd
