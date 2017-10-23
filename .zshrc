@@ -55,7 +55,8 @@ source $ZSH/oh-my-zsh.sh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 # added by Anaconda2 4.1.0 installer
-export PATH="$PATH:$HOME/anaconda/bin"
+export CONDAPATH=($HOME/*conda*)
+export PATH="$PATH:$CONDAPATH/bin"
 
 hangups () {
 docker run -it --rm --name hangups --volumes-from hangups-session tdryer/hangups
