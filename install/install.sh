@@ -6,7 +6,7 @@
 sudo apt-get install git i3 r-base-dev xutils-dev libtool xcb xcb-proto \
     libjpeg62 zsh thunar rofi feh i3blocks gtk-doc-tools \
     gobject-introspection pass htop ranger libcurl4-openssl-dev \
-    libssl-dev libnlopt-dev texlive-full
+    libssl-dev libnlopt-dev texlive-full vim-nox compton libxml2-dev
 
 mkdir ~/.fonts
 wget "https://github.com/FortAwesome/Font-Awesome/blob/master/fonts/fontawesome-webfont.ttf?raw=true" \
@@ -15,6 +15,7 @@ wget "https://github.com/FortAwesome/Font-Awesome/blob/master/fonts/fontawesome-
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 chsh -s /usr/bin/zsh
+
 
 sudo apt-get install libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev \
     libxcb-util0-dev libxcb-icccm4-dev libyajl-dev \
