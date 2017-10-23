@@ -6,7 +6,7 @@
 sudo apt-get install git i3 r-base-dev xutils-dev libtool xcb xcb-proto \
     libjpeg62 zsh thunar rofi feh i3blocks gtk-doc-tools \
     gobject-introspection pass htop ranger libcurl4-openssl-dev \
-    libssl-dev libnlopt-dev texlive-full vim-nox compton libxml2-dev
+    libssl-dev libnlopt-dev texlive-full vim-nox compton libxml2-dev curl
 
 mkdir ~/.fonts
 wget "https://github.com/FortAwesome/Font-Awesome/blob/master/fonts/fontawesome-webfont.ttf?raw=true" \
