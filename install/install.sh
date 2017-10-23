@@ -3,7 +3,7 @@
 # Script for installing Ubuntu for the first time downloads all the necessary
 # libraries to use the system the way a nyan can
 
-sudo apt-get install git i3 r-base-dev xutils-dev libtool xcb xcb-proto \
+sudo apt-get install git i3 xutils-dev libtool xcb xcb-proto \
     libjpeg62 zsh thunar rofi feh i3blocks gtk-doc-tools \
     gobject-introspection pass htop ranger libcurl4-openssl-dev \
     libssl-dev libnlopt-dev texlive-full vim-nox compton libxml2-dev curl
@@ -57,8 +57,16 @@ cd playerctl
 make
 sudo make install
 
-cd /tmp
+# install real R 
+sudo add-apt-repository "deb http://cran.rstudio.com/bin/linux/ubuntu $(lsb_release -sc)/"
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
+sudo add-apt-repository ppa:marutter/rdev
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install r-base
+
 # install rstudio
+cd /tmp
 wget https://download1.rstudio.org/rstudio-xenial-1.0.153-amd64.deb
 sudo dpkg -i ./rstudio-*.deb
 

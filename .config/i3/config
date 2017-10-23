@@ -195,9 +195,9 @@ bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
 bindsym XF86WakeUp+space exec playerctl play-pause
 
 # Media player controls
-bindsym XF86LaunchA exec playerctl play-pause
-bindsym XF86Explorer exec playerctl next
-bindsym XF86Search exec playerctl previous
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
 
 # Change transperency 
 exec /usr/bin/compton --config ~/Documents/dotfiles/.config/i3/compton.profile
