@@ -70,8 +70,8 @@ alias vpnihmeup="nmcli con up id IHME"
 alias vpnihmedown="nmcli con down id IHME"
 alias wifirestart="service network-manager restart"
 alias gittree="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --branches --date-order"
-alias canihaz="sudo apt-get install"
-alias digivolve="sudo apt-get update && sudo apt-get dist-upgrade"
+alias canihaz="sudo apt install"
+alias digivolve="sudo apt update && sudo apt dist-upgrade"
 alias ipy="ssh -N -f -L localhost:8000:localhost:7575"
 
 # Setup the alias. Put this in your .bash_rc or .zshrc file so it's available at startup.
