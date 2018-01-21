@@ -213,12 +213,12 @@ bindsym $mod+m move workspace to output left
 bindsym Print exec gnome-screenshot
 bindsym Shift+Print exec gnome-screenshot -a
 exec_always --no-startup-id  "setxkbmap -v us"
-exec_always xrandr --output VIRTUAL1 --off --output eDP1 --primary --mode 1600x900 --pos 0x540 --rotate normal --output DP2-1 --mode 2560x1440 --pos 1600x0 --rotate normal
+exec_always xrandr --output eDP-1 --mode 3840x2160 --pos 0x0 --rotate normal --output DP-1-2 --off --output HDMI-2 --off --output HDMI-1 --off --output DP-1 --off --output DP-1-3 --off --output DP-2 --off --output DP-1-1 --mode 1920x1080 --pos 3841x0 --scale 2x2 --fb 7681x4320 --rotate normal
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
 exec --no-startup-id syndaemon -i 0.5 -K -R -d
-exec compton -f
+exec --no-startup-id compton -f
 
 
 # gaps set up mode

@@ -8,6 +8,8 @@ ln -s $FOLDER/.zshrc ~/.zshrc
 
 # remove old i3 config files replace with new
 rm ~/.config/i3/*
+rm ~/.config/compton.conf
+ln -s $FOLDER/.config/compton.conf ~/.config/compton.conf
 ln -s $FOLDER/.config/i3/* ~/.config/i3/
 rm ~/.i3blocks.conf
 ln -s $FOLDER/.i3blocks.conf ~/.i3blocks.conf
