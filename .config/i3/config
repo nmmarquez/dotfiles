@@ -89,6 +89,9 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
+# class                 border  backgr. text    indicator child_border
+client.focused          #ffffff #ffffff #ffffff #ffffff   #ffffff
+
 # focus the child container
 # bindsym $mod+d focus child
 
