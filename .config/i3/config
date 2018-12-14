@@ -181,6 +181,19 @@ bar {
         #font pango: 14px
 }
 
+#bar {
+#        status_command i3status
+#        tray_output primary
+#        font pango:monospace 10
+#        output eDP-1-1
+#}
+
+#bar {
+#        status_command i3status
+#        tray_output primary
+#        output DP-1-1-1
+#}
+
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec amixer -D pulse set Master 4%+ unmute
@@ -216,7 +229,7 @@ bindsym $mod+m move workspace to output left
 bindsym Print exec gnome-screenshot
 bindsym Shift+Print exec gnome-screenshot -a
 exec_always --no-startup-id  "setxkbmap -v us"
-exec_always xrandr --output eDP-1 --mode 3840x2160 --pos 0x0 --rotate normal --output DP-1-2 --off --output HDMI-2 --off --output HDMI-1 --off --output DP-1 --off --output DP-1-3 --off --output DP-2 --off --output DP-1-1 --mode 1920x1080 --pos 3841x0 --scale 2x2 --fb 7681x4320 --rotate normal
+exec_always xrandr --output eDP-1-1 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1-1-1 --mode 1920x1080 --pos 1920x0 --scale 1x1
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet

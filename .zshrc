@@ -18,6 +18,8 @@ source $ZSH/oh-my-zsh.sh
 # added by Anaconda2 4.1.0 installer
 export CONDAPATH=($HOME/*conda*)
 export PATH="$PATH:$CONDAPATH/bin"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 hangups () {
 docker run -it --rm --name hangups --volumes-from hangups-session tdryer/hangups
