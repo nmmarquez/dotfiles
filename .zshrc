@@ -19,9 +19,13 @@ source $ZSH/oh-my-zsh.sh
 export CONDAPATH=($HOME/*conda*)
 export PATH="$PATH:$CONDAPATH/bin"
 
-hangups () {
-docker run -it --rm --name hangups --volumes-from hangups-session tdryer/hangups
-}
+# Install Ruby Gems to ~/gems
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
+
+# hangups () {
+# docker run -it --rm --name hangups --volumes-from hangups-session tdryer/hangups
+# }
 
 alias wanip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias pprint="python -m json.tool"
@@ -32,6 +36,7 @@ alias vpnihmedown="nmcli con down id IHME"
 alias wifirestart="service network-manager restart"
 alias gittree="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --branches --date-order"
 alias canihaz="sudo apt install"
+alias mtrainer="sudo sshfs -o allow_other,default_permissions rainer:/ /mnt/rainer"
 alias digivolve="sudo apt update && sudo apt dist-upgrade"
 alias ipy="ssh -N -f -L localhost:8000:localhost:7575"
 

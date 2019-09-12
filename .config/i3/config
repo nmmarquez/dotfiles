@@ -216,7 +216,7 @@ bindsym $mod+m move workspace to output left
 bindsym Print exec gnome-screenshot
 bindsym Shift+Print exec gnome-screenshot -a
 exec_always --no-startup-id  "setxkbmap -v us"
-exec_always xrandr --output DP-2-1 --mode 2560x1440 --pos 0x0 --rotate normal --output DP-2-2 --off --output DP-2-3 --off --output eDP-1 --primary --mode 1920x1080 --pos 2560x360 --rotate normal --output HDMI-2 --off --output HDMI-1 --off --output DP-2 --off --output DP-1 --off
+exec_always xrandr --output DP-2-1 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-2-2 --off --output DP-2-3 --off --output eDP-1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI-2 --off --output HDMI-1 --off --output DP-2 --off --output DP-1 --off
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
